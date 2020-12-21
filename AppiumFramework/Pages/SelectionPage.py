@@ -1,7 +1,9 @@
 from AppiumFramework.Base.BasePage import BasePage
+import AppiumFramework.Utilities.Custom_logger as cl
 
 
 class SelectionPage(BasePage):
+
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
@@ -19,7 +21,6 @@ class SelectionPage(BasePage):
         self.scroll_in_view(self.text, "text")
 
         self.click_Element(self.text, "text")
-
 
     def enter_name(self):
         self.enterText("himanshu shinde", self.enter_name_field, "id")
