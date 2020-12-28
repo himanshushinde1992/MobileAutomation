@@ -41,3 +41,12 @@
 21/12/20 05:20:02 PM Monday - BasePage - INFO : Clicked on element with the locator typeidwith the locator value : com.androidsample.generalstore:id/nameField
 21/12/20 05:20:02 PM Monday - BasePage - INFO : Clicked on element with the locator typeidwith the locator value : com.androidsample.generalstore:id/radioFemale
 21/12/20 05:20:03 PM Monday - BasePage - INFO : Clicked on element with the locator typeidwith the locator value : com.androidsample.generalstore:id/btnLetsShop
+21/12/20 07:51:28 PM Monday - selection_form - INFO : Launch app
+21/12/20 07:51:29 PM Monday - BasePage - INFO : Screenshot is saved on ../screenshots/app_21_12_20_19_51_28.png
+21/12/20 07:51:32 PM Monday - BasePage - INFO : Clicked on element with the locator typeidwith the locator value : com.androidsample.generalstore:id/spinnerCountry
+21/12/20 07:52:12 PM Monday - BasePage - INFO : Element not clickable with locator typetextwith the locator valueIndia
+21/12/20 07:52:13 PM Monday - BasePage - INFO : Clicked on element with the locator typetextwith the locator value : India
+21/12/20 07:52:43 PM Monday - BasePage - INFO : Clicked on element with the locator typeidwith the locator value : com.androidsample.generalstore:id/nameField
+21/12/20 07:52:44 PM Monday - BasePage - INFO : Clicked on element with the locator typeidwith the locator value : com.androidsample.generalstore:id/radioFemale
+21/12/20 07:52:45 PM Monday - BasePage - INFO : Clicked on element with the locator typeidwith the locator value : com.androidsample.generalstore:id/btnLetsShop
+21/12/20 07:52:47 PM Monday - BasePage - INFO : Screenshot is saved on ../screenshots/cart page_21_12_20_19_52_45.png
