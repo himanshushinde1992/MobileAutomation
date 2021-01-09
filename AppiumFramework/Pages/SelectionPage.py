@@ -17,6 +17,7 @@ class SelectionPage(BasePage):
     let_shop_button = "com.androidsample.generalstore:id/btnLetsShop"
 
     def country_selection(self):
+        cl.allureLogs("this is country selection for the user")
         self.click_Element(self.country_selection_dropdown, "id")
         self.scroll_in_view(self.text, "text")
 

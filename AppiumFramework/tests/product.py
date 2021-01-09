@@ -6,7 +6,7 @@ from AppiumFramework.Pages.Itemspage import products
 import time
 
 
-class product_page(unittest.TestCase):
+class product_page_Test(unittest.TestCase):
     @pytest.mark.usefixtures("beforeClass", "beforeMethod")
     def classObject(self):
         self.item = products(self.driver)

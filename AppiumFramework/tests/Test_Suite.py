@@ -1,16 +1,14 @@
 # 1. Import the files
 import unittest
 
-from AppiumFramework.tests import Selection_form
-from AppiumFramework.tests.Selection_form import selection_form
-from AppiumFramework.tests import product
+from AppiumFramework.tests.product import product_page_Test
 
 # 2. Create the object of the class using unitTest
-sf = unittest.TestLoader().loadTestsFromTestCase(Selection_form)
-pp = unittest.TestLoader().loadTestsFromTestCase(product)
+
+pp = unittest.TestLoader().loadTestsFromTestCase(product_page_Test)
 
 #  3. Create TestSuite
-regressionTest = unittest.TestSuite([sf, pp])
+smokeTest = unittest.TestSuite([pp])
 
 # 4. Call the Test Runner method
-unittest.TextTestRunner(verbosity=1).run(regressionTest)
+unittest.TextTestRunner(verbosity=1).run(smokeTest)

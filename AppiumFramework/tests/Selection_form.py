@@ -8,19 +8,21 @@ from AppiumFramework.Pages.SelectionPage import SelectionPage
 import time
 
 
-@pytest.yield_fixture("beforeClass", "beforeMethod")
-class selection_form(unittest.TestCase):
-    def selection_method(self):
+@pytest.mark.usefixtures("beforeClass", "beforeMethod")
+class selection_form_Test(unittest.TestCase):
+    @pytest.fixture(autouse=True)
+    def classObjects(self):
+        self.sel = SelectionPage(self.driver)
+
+    def test_selection_method(self):
         log = cl.customLogger()
 
-        pageBase = BasePage(driver)
         log.info("Launch app")
 
-        sel = SelectionPage(driver)
-        pageBase.screenshot("app")
-        sel.country_selection()
+        self.sel.screenshot("app")
+        self.sel.country_selection()
         time.sleep(30)
-        sel.enter_name()
-        sel.gender_select()
-        sel.click_let_shop()
-        pageBase.screenshot("cart page")
+        self.sel.enter_name()
+        self.sel.gender_select()
+        self.click_let_shop()
+        self.sel.screenshot("cart page")
