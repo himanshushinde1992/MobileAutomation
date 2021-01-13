@@ -1,8 +1,7 @@
-# import allure
-# from allure_commons.types import AttachmentType
 from selenium.common.exceptions import ElementNotVisibleException, ElementNotSelectableException, NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 import AppiumFramework.Utilities.Custom_logger as cl
+
 import time
 
 
@@ -63,7 +62,7 @@ class BasePage:
 
         return element
 
-    def click_Element(self, locatorvalue, locatorType="id"):
+    def click_Element(self, locatorvalue: object, locatorType: object = "id") -> object:
         element = None
         try:
             locatorType = locatorType.lower()
@@ -146,3 +145,9 @@ class BasePage:
             self.log.info(
                 "Element not clickable with locator type" + locatorType + "with the locator value" + locatorvalue)
             return False
+
+    def hide_keyboard(self):
+        try:
+            self.driver.hide_keyboard()
+        except:
+            self.log.info("Hiding keyboard command failed")

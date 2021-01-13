@@ -4,7 +4,7 @@ import AppiumFramework.Utilities.Custom_logger as cl
 
 class products(BasePage):
     def __init__(self, driver):
-        super().__init__(driver)
+        super.__init__(driver)
         self.driver = driver
 
     log = cl.customLogger()

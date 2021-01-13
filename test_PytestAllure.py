@@ -1,6 +1,8 @@
 import pytest
 import allure
 
+from AppiumFramework.Utilities.Custom_logger import allureLogs
+
 
 def test_methodA():
     allureLogs("this is test of allure log")
@@ -15,12 +17,7 @@ def test_methodB():
 def test_methodC():
     print("This is method C")
 
-
 def test_methodD():
     print("This is method D")
     assert False
 
-
-def allureLogs(text):
-    with allure.step():
-        pass

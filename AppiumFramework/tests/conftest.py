@@ -1,5 +1,6 @@
-import pytest
 import time
+
+import pytest
 
 from AppiumFramework.Base.Driver import Driver
 
@@ -15,10 +16,3 @@ def beforeClass(request):
     yield driver
     time.sleep(5)
     driver.quit()
-
-
-@pytest.yield_fixture()
-def beforeMethod():
-    print('Before Method')
-    yield
-    print('After Method')
