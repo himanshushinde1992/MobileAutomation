@@ -9,7 +9,7 @@ class Driver:
         desired_caps['automationName'] = 'UiAutomator2'
         desired_caps['platformVersion'] = '7.0'
         desired_caps['deviceName'] = 'WK8DWSMJAASGLREM'
-        desired_caps['app'] = ("J:\\copied docus\\AssetPanda-6.1.8-production-debug.apk")
+        desired_caps['app'] = ("J:\\copied docus\\")
         desired_caps['appPackage'] = 'com.assetpanda'
         desired_caps['appActivity'] = 'com.assetpanda.activities.LoginRegisterActivity'
         # desired_caps['FullReset'] = True
