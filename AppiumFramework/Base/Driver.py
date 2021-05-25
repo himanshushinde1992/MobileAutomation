@@ -10,8 +10,8 @@ class Driver:
         desired_caps['platformVersion'] = '7.0'
         desired_caps['deviceName'] = 'WK8DWSMJAASGLREM'
         desired_caps['app'] = ("J:\\copied docus\\")
-        desired_caps['appPackage'] = 'com.assetpanda'
-        desired_caps['appActivity'] = 'com.assetpanda.activities.LoginRegisterActivity'
+        desired_caps['appPackage'] = 'com.xyz'
+        desired_caps['appActivity'] = 'com.xyzActivity'
         # desired_caps['FullReset'] = True
 
 
